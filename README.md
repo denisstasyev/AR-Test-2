@@ -45,6 +45,8 @@ It contains ViewGift container with all app logic. ViewerAR is the main componen
 
 AR.js is a very cool thing I mean, but using it in a complex project can cause a number of problems. I hope I helped you save thousands of hours trying to figure out answers to basic questions about AR.js with this repository 😀
 
+I got a few ideas while browsing [this archieved repository](https://github.com/marmelab/sketch-by-phone)
+
 ## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
