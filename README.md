@@ -38,8 +38,9 @@ It contains ViewGift container with all app logic. ViewerAR is the main componen
 2. AR.js does not support ```embedded``` property of A-Frame now (AR.js 2.0.8). It only supports full screen operation (but you can draw your user interface (UI) on top of the camera 😀).
 3. The only way to avoid scrolling the camera is to use CSS property ```overflow: hidden;``` for ```body```.
 4. AR.js has no opportunity to turn off camera from code now. The only way to do this is to use ```window.location.reload();``` from JavaScript. That's why you cannot use special URL for AR with React Router.
-  
-5. three.js: it is quite hard to add custom loader any 3D models format. I use GLTF format in this project. It loads simple GLTF file, but then some textures are loaded separately. That's why you cannot add this simple file into your frontend app: you need some backend to share static models. I use Express for Node JS here. There is GLB format, which is archive of GLTF, but three.js has no loader for them now.
+5. Very often, AR.js does not work due to the poor quality of the marker itself. In my case, after I circled the marker with a black felt-tip pen, the recognition quality was dramatically corrected.
+6. AR.js uses WebRTC. That's why you need to enable HTTPS on your site to view AR on smartphones.
+7. three.js: it is quite hard to add custom loader any 3D models format. I use GLTF format in this project. It loads simple GLTF file, but then some textures are loaded separately. That's why you cannot add this simple file into your frontend app: you need some backend to share static models. I use Express for Node JS here. There is GLB format, which is archive of GLTF, but three.js has no loader for them now.
 
 ### My results
 
